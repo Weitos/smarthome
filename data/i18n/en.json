@@ -1,0 +1,105 @@
+{
+  "start": {
+    "welcome": "👋 Welcome, {name}!\n\nI'm your personal smart home assistant! 🏠\n\n<b>What I can do:</b>\n\n🍎 <b>Kitchen</b> - recognize products from photos\n   └ Save to history, track expiry dates\n\n🧾 <b>Receipts</b> - scan utility bills\n   └ Extract amount, meter readings\n\n💡 <b>Smart Home</b> - control devices\n   └ MQTT, Home Assistant, on/off\n\n📊 <b>Statistics</b> - analyze expenses\n   └ Charts, categories, purchase history\n\n👤 <b>Profile</b> - your balance and payments\n   └ Crypto Bot, Telegram Stars\n\n━━━━━━━━━━━━━━━━━━\nSelect a section from the menu below 👇",
+    "help": "📖 <b>📚 Command Reference</b>\n\n<b>Main commands:</b>\n/start - Main menu\n/profile - Your profile and balance\n/devices - Device management\n/stats - Detailed statistics\n/pay [ID] - Confirm payment\n\n<b>🔐 Limits:</b>\n• Free: 3 scans per week\n• Premium: unlimited + smart home\n\n<b>💳 Payment:</b>\n• Crypto Bot (USDT)\n• Telegram Stars (1⭐ = 2₽)\n\n<b>📱 Links:</b>\n• GitHub: [link in README]\n• Version: 1.0.0"
+  },
+  "menu": {
+    "main": "🏠 <b>Main Menu</b>\n\nWelcome! Select an action:",
+    "kitchen": "🍏 <b>\"Kitchen\" Mode</b>\n\n📸 Send a photo of products and I will:\n• Recognize product names\n• Determine category (fruits, vegetables, dairy, meat, bakery, drinks)\n• Show approximate calories\n• Save to history\n• Check expiry date (if specified)\n\n<i>Send one photo to scan</i>",
+    "receipts": "📄 <b>\"Receipts\" Mode</b>\n\n📸 Send a photo of a bill and I will extract:\n• 💰 Payment amount\n• 📅 Period (month/year)\n• 🏠 Address\n• 📊 Meter readings\n• 📄 Service type (electricity, water, gas, heating)\n• 💵 Tariff and penalties (if any)\n• 🏷️ Account number\n\n<i>Supports utility bills</i>",
+    "smart_home": "🏠 <b>Smart Home</b>\n\nControl smart devices:\n\n💡 <b>Light</b> - turn on/off lighting\n🔌 <b>Sockets</b> - power management\n🌡️ <b>Thermostats</b> - temperature control\n📷 <b>Cameras</b> - view status\n🚪 <b>Sensors</b> - get data\n\n⚠️ <i>Premium required</i>",
+    "stats": "📊 <b>Statistics</b>\n\nYour data analytics:",
+    "profile": "👤 <b>Profile</b>\n\nAccount management:",
+    "settings": "⚙️ <b>Settings</b>\n\nCustomize the bot:"
+  },
+  "buttons": {
+    "kitchen": "🍎 Kitchen",
+    "receipts": "🧾 Receipts",
+    "smart_home": "💡 Smart Home",
+    "stats": "📊 Statistics",
+    "profile": "👤 Profile",
+    "settings": "⚙️ Settings",
+    "back": "🔙 Back",
+    "cancel": "🔙 Cancel",
+    "add_device": "🔌 Add Device",
+    "all_devices": "💡 My Devices",
+    "top_up_crypto": "💰 Top Up (Crypto)",
+    "top_up_stars": "⭐ Top Up (Stars)",
+    "payment_history": "📜 Payment History",
+    "language": "🌐 Language",
+    "currency": "💱 Currency",
+    "notifications": "🔔 Notifications",
+    "premium": "⭐ Buy Premium",
+    "my_products": "📦 My Products",
+    "my_receipts": "🧾 My Receipts"
+  },
+  "smart_home": {
+    "no_devices": "📭 <b>No devices yet</b>\n\nAdd your first smart device:\n1. Tap \"Add device\"\n2. Enter name (e.g., \"Living room lamp\")\n3. Select device type\n4. Specify room\n5. Enter MQTT topic or \"ha\" for Home Assistant\n\n💡 <b>Supported:</b>\n• MQTT broker\n• Home Assistant\n• Light, sockets, thermostats",
+    "add_name": "🔌 <b>Adding Device</b>\n\n📝 <b>Step 1 of 4</b>\n\nEnter device name:\n\nExamples:\n• \"Bedroom lamp\"\n• \"Air conditioner\"\n• \"Smart socket\"\n• \"Temperature sensor\"",
+    "add_type": "🔧 <b>Select device type</b>\n\n📝 <b>Step 2 of 4</b>\n\n1. 💡 <b>Light</b> (light) - lighting control\n2. 🔌 <b>Socket</b> (switch) - on/off\n3. 🌡️ <b>Thermostat</b> (thermostat) - temperature\n4. 📷 <b>Camera</b> (camera)\n5. 🚪 <b>Sensor</b> (sensor)\n\nEnter number or type name:",
+    "add_room": "🏠 <b>Installation room</b>\n\n📝 <b>Step 3 of 4</b>\n\nEnter room name:\n\nPopular rooms:\n• Kitchen 🧑‍🍳\n• Bedroom 🛏️\n• Living room 📺\n• Bathroom 🚿\n• Balcony 🌿\n• Hallway 🚪",
+    "add_topic": "📡 <b>MQTT topic</b>\n\n📝 <b>Step 4 of 4</b>\n\nEnter MQTT topic for control:\n\n<i>Examples:</i>\n• home/living_room/light\n• home/bedroom/socket\n• sensors/kitchen/temperature\n\n<b>For Home Assistant enter \"ha\"</b>",
+    "device_added": "✅ <b>Device added!</b>\n\n📌 <b>Name:</b> {name}\n🔧 <b>Type:</b> {type}\n🏠 <b>Room:</b> {room}\n📡 <b>Status:</b> Waiting for connection\n\nNow you can control this device!",
+    "device_on": "✅ <b>{device}</b> turned on\n\n💡 Light is on",
+    "device_off": "🔴 <b>{device}</b> turned off\n\n💡 Light is off",
+    "premium_required": "⭐ <b>Premium required!</b>\n\nSmart Home is only available for Premium users.\n\n<b>Premium benefits:</b>\n✅ ∞ product scans\n✅ ∞ receipt scans\n✅ 💡 Smart Home (MQTT + Home Assistant)\n✅ 📊 Extended statistics\n✅ 🔔 Payment reminders\n\n💰 <b>Price:</b> from 99 Stars/month\n   or 198 ₽/month\n\n💳 Buy in profile"
+  },
+  "payment": {
+    "select_amount_crypto": "💰 <b>Top up via Crypto Bot</b>\n\nTop up in cryptocurrency (USDT)\n💵 <b>Amount in rubles:</b>\n• 100 ₽ ≈ 1.22 USDT\n• 250 ₽ ≈ 3.05 USDT\n• 500 ₽ ≈ 6.10 USDT\n• 1000 ₽ ≈ 12.20 USDT\n• 2500 ₽ ≈ 30.50 USDT\n• 5000 ₽ ≈ 61.00 USDT\n\n💡 <i>Rate: 1 USDT ≈ 82 ₽ (09.05.2026)</i>\n\nAfter payment balance updates automatically",
+    "select_amount_stars": "⭐ <b>Payment via Telegram Stars</b>\n\nTop up via Stars\n💵 <b>Amount in Stars:</b>\n• 50 ⭐ = 100 ₽\n• 125 ⭐ = 250 ₽\n• 250 ⭐ = 500 ₽\n• 500 ⭐ = 1000 ₽\n• 1250 ⭐ = 2500 ₽\n\n💡 <i>Rate: 1 ⭐ = 2 ₽</i>",
+    "custom_amount": "💵 <b>Enter amount</b>\n\nEnter top-up amount in rubles:\n\n📊 <b>Minimum:</b> 10 ₽\n📊 <b>Maximum:</b> 50 000 ₽\n\nEnter number:",
+    "invoice_created": "💰 <b>Invoice created!</b>\n\n📋 <b>Payment details:</b>\nAmount: <b>{amount} ₽</b>\nCurrency: USDT (Crypto Bot)\n\n🔗 <b>Payment link:</b>\n{url}\n\n⏰ <b>Valid for:</b> 1 hour\n\n💡 After payment balance will update automatically",
+    "invoice_created_stars": "⭐ <b>Invoice created!</b>\n\n📋 <b>Payment details:</b>\nAmount: <b>{stars} ⭐</b> = {amount} ₽\n\n💡 Pay via Telegram\nAfter payment balance updates automatically",
+    "no_history": "📜 <b>Payment history is empty</b>\n\nYou don't have any payments yet. Top up your balance!",
+    "payment_success": "✅ <b>Payment processed successfully!</b>\n\n💰 Amount: {amount} {currency}\n💳 New balance: {balance} {currency}\n\nThank you! 🙏"
+  },
+  "limits": {
+    "free_limit_reached": "⚠️ <b>Limit reached!</b>\n\nYou've used all 3 free scans this week.\n\n📊 <b>Next reset:</b> Monday\n\n💰 <b>Continue using:</b>\n• Buy Premium (unlimited)\n• Top up balance (1 ₽ per scan)\n\n💡 <i>Premium = 99 Stars/month</i>",
+    "scans_left": "📊 <b>Weekly limits</b>\n\n🍎 Products: {products}/3\n🧾 Receipts: {receipts}/3\n\n💡 Premium = ∞ (unlimited)"
+  },
+  "premium": {
+    "info": "⭐ <b>Premium status</b>\n\n<b>What you get:</b>\n\n✅ ∞ product scans (no limits)\n✅ ∞ receipt scans\n✅ 💡 Smart Home (MQTT + Home Assistant)\n✅ 📊 Extended statistics\n✅ 🔔 Payment reminders\n✅ 🏠 Add devices\n✅ 📈 Expense charts\n\n💰 <b>Price:</b> from 99 Stars/month\n   (≈ 198 ₽/month)\n\n💳 Purchase in profile",
+    "features": "✅ <b>Your Premium features:</b>\n\n✓ Unlimited scans\n✓ Smart Home\n✓ Extended analytics\n✓ Add devices\n✓ Priority support",
+    "buy": "⭐ <b>Buy Premium</b>\n\nSelect payment method:\n\n💳 <b>Options:</b>\n1. Crypto Bot (USDT)\n2. Telegram Stars\n\n💰 <b>Tariffs:</b>\n• 99 Stars/month (198 ₽)\n• 250 Stars/3 months (500 ₽)\n• 500 Stars/6 months (1000 ₽)"
+  },
+  "currency": {
+    "title": "Select currency for balance display:\n\nRUB - Russian Ruble (₽)\nUSD - US Dollar ($)\nEUR - Euro (€)\nCNY - Chinese Yuan (¥)\nTRY - Turkish Lira (₺)\nBYN - Belarusian Ruble (Br)\nKZT - Kazakh Tenge (₸)",
+    "rub": "Russian Rubles (RUB)"
+  },
+  "scanner": {
+    "scanning": "🔍 <b>Recognizing image...</b>\n\n⏳ Please wait 5-10 seconds\n\n💡 Using AI (google/gemma-4-31b) for analysis",
+    "products_found": "✅ <b>Products recognized!</b>\n\n📦 <b>List:</b>\n{list}\n\n📝 <b>Description:</b> {summary}",
+    "receipt_found": "✅ <b>Bill data extracted</b>\n\n📋 <b>Information:</b>\n{info}",
+    "error": "❌ <b>Processing error</b>\n\n😕 An error occurred: {message}\n\n📋 Try:\n• Send another photo\n• Check image quality\n• Try again later"
+  },
+  "reminders": {
+    "payment_due": "🔔 <b>Utility payment reminder!</b>\n\n⏰ Less than 48 hours left!\n\n📋 <b>Payment details:</b>\n💰 Amount: {amount}\n📅 Period: {period}\n📄 Service: {service}\n🏠 Address: {address}\n\n💡 Don't forget to pay on time!",
+    "expiry_warning": "⏰ <b>Attention! Expiry date</b>\n\n🛒 <b>Product:</b> {product}\n⏰ Expires in 48 hours!\n\n💡 Check fridge and use in time!",
+    "premium_expiring": "⭐ <b>Premium expiring!</b>\n\n⏰ Your Premium expires in {days} days\n\n💡 Don't forget to renew!"
+  },
+  "settings": {
+    "language_changed": "✅ <b>Language changed!</b>\n\nNow the bot uses Russian language",
+    "language_changed_en": "✅ <b>Language changed!</b>\n\nNow the bot uses English",
+    "currency_changed": "✅ <b>Currency changed!</b>\n\nNow the balance is displayed in {currency}",
+    "notifications_enabled": "🔔 <b>Notifications enabled</b>\n\nNow you will receive reminders about:\n• Product expiry dates\n• Utility payments\n• Premium status",
+    "notifications_disabled": "🔕 <b>Notifications disabled</b>\n\nYou won't receive reminders",
+    "reminder_days": "⏰ Reminders {days} days in advance"
+  },
+  "errors": {
+    "photo_required": "📷 <b>Photo required, not text</b>\n\nPlease send a photo, not a text message.\n\n💡 Select mode (Kitchen or Receipts) and send a photo.",
+    "invalid_amount": "❌ <b>Invalid amount</b>\n\nEnter a number from 10 to 50000\n\nExample: 500",
+    "device_not_found": "❌ Device not found\n\nPerhaps it was deleted",
+    "payment_failed": "❌ Payment error: {message}\n\n💡 Try later or select another payment method",
+    "api_error": "❌ API error: {message}\n\n💡 Try the request again"
+  },
+  "common": {
+    "balance": "Balance",
+    "date": "Date",
+    "loading": "⏳ Loading...",
+    "success": "✅ Success",
+    "cancel": "Cancel",
+    "back": "Back to menu",
+    "id": "ID",
+    "status": "Status"
+  }
+}
